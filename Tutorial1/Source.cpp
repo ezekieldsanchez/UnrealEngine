@@ -4,16 +4,10 @@ using namespace std;
 int main()
 {
 	int a(1);
-	int b(13);
+	int& ref_a = a;
 
-	if (a == b) {
-		cout << "Hello";
-	}
-	else
-	{
-		cout << "World";
-	}
-
+ a = 4;
+ cout << ref_a;
 
 	return 0;
 }
